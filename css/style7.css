@@ -1,0 +1,29 @@
+.chhaya {
+    background-color: rgb(100, 9, 67);
+    border-top:  30px solid rgb(178, 4, 91);
+    border-bottom: 30px solid rgb(178, 4, 91);
+    border-left:  70px solid rgb(178, 4, 91);
+    border-right:  70px solid rgb(178, 4, 91);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 700px;
+    height: 600px;
+    margin: 100px;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.button {
+    margin: 1em;
+    padding: 2em;
+    width: 40%;
+    font-weight: bold;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
