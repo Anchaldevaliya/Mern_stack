@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .center-button {
+            text-align: center;
+        }
+
+        .center1-button {
+            text-align: left;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-center {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="registration_process.php" method="post">
+        <table>
+            <tr>
+                <td class="label"><label for="first_name">First Name:</label></td>
+                <td><input type="text" id="first_name" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="re_password">Re-enter Password:</label></td>
+                <td><input type="password" id="re_password" name="re_password" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="phone_number">Phone Number:</label></td>
+                <td><input type="tel" id="phone_number" name="phone_number" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td class="label"><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value=" ">Choose your country</option>
+
+                        <option value="India">India</option>
+                        <option value="USA">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Languages Known:</td>
+                <td>
+                    <input type="checkbox" id="english" name="languages_known[]" value="English">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="hindi" name="languages_known[]" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="kannada" name="languages_known[]" value="Kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="telugu" name="languages_known[]" value="Telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center1-button">
+                    <label for="declaration">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        I hereby declare that all the given details are true.
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bottom-center">
+                    <span>Log in to </span>
+                    <a href=""> Ethnus</a>
+                    <span>website</span>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="center-button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
